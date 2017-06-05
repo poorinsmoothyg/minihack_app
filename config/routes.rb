@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
 
-get 'static_pages/page1'
+root 'static_pages#page1'
 
-get 'static_pages/page2'
+get '/page2', to: 'static_pages#page2'
 
-get 'static_pages/page3'
+get '/page3', to: 'static_pages#page3'
 
-get 'static_pages/page4'
-
-root 'application#hello'
+get '/page4', to: 'static_pages#page4'
 
 end
